@@ -20,3 +20,7 @@
 - `include` : 컴파일 할 대상들을 지정한다. (glob 패턴). `*`를 사용하면 .ts, .tsx, .d.ts만 include 한다 (allowJS).
 
 - `exclude` : 컴파일 제외할 대상들을 지정한다. (glob 패턴). 만약 설정을 하지 않으면 4가지 (node_modules, bower_components, jspm_packages, \<outDir>)를 default 로 제외한다. \<outDir>는 include에 있다고 하여도 항상 제외한다.
+
+- `compileOptions`
+  - `typeRoots` : 배열 안에 들어있는 경로들 아래서만 가져와 사용한다.
+  - `types`: 외부 라이브러리 (e.g. react)에 대한 타이핑을 도와주는 기능. 아무 설정을 하지 않으면 `node_modules/@types` 라는 모든 경로를 사용한다. 만약 빈 배열 `[]`로 설정하면 사용하지 않는 다는 의미이다. `typeRoots`와 `types`를 같이 사용하지 않는다.
