@@ -26,3 +26,5 @@
   - `types`: 외부 라이브러리 (e.g. react)에 대한 타이핑을 도와주는 기능. 아무 설정을 하지 않으면 `node_modules/@types` 라는 모든 경로를 사용한다. 만약 빈 배열 `[]`로 설정하면 사용하지 않는 다는 의미이다. `typeRoots`와 `types`를 같이 사용하지 않는다.
   - `target` : 빌드 결과물의 ECMAScript 버전을 지정한다. default 값은 `ES3` 이다.
   - `lib` : 기본 type definition 라이브러리를 지정한다. lib를 지정하지 않으면 ECMAScript 버전에 따라 default 값이 달라진다. lib를 지정하면 지정한 값들로만 라이브러리를 사용한다.
+  - `outDir` : 컴파일된 결과물의 위치
+  - `rootDir` : 기준점이 되는 경로 지정 보통 src를 지정함
